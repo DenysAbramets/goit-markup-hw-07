@@ -1,0 +1,27 @@
+.clients {
+    display: flex;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .clients__sprite {
+    outline: 1px solid #afb1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    fill: #afb1b8;
+    padding: 16px 32px;
+
+    &:hover,
+  &:focus {
+    fill: var(--blue-color);
+    outline: 1px solid var(--blue-color);
+  }
+  }
+  
+  .clients__link:not(:last-child) {
+    margin-right: 30px;
+  }
+  
